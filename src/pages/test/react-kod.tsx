@@ -21,6 +21,8 @@ const RKTabs = () => {
     }
     return <div className={styles.tabs}>
         <TabButtons
+            variant="ink-bar"
+            activeKey={activeTab}
             onChange={handleTabChange}
             tabs={tabs.map(x => ({
                 key: x.key,
@@ -31,9 +33,9 @@ const RKTabs = () => {
             ((() => {
                 switch (activeTab) {
                     case "0":
-                        return <div>Tab 1</div>
+                        return <div className={styles.content}>Tab 1</div>
                     case "1":
-                        return <div>Tab 2</div>
+                        return <div className={styles.content}>Tab 2</div>
                     case "2":
                         return <HeavyTabs />
                     default:

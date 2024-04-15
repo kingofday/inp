@@ -1,3 +1,8 @@
-.tabs{
-    
+.tabs {
+    :global(.tab-buttons){
+        background-color: #eee;
+    }
+    .content {
+        margin-top: 1rem;
+    }
 }
