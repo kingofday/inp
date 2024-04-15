@@ -6,11 +6,11 @@ const TabButton = ({ isActive,children, onClick, className }: {
     onClick: () => void,
     className: string
 }) => {
-    const [isPending, startTransition] = useTransition();
-    const handleClick = ()=>startTransition(()=>{
-        onClick();
-    })
-    return <button disabled={isPending} style={{ opacity: isPending && isActive ? "0.5" : "1" }} className={className} onClick={handleClick}>
+    //const [isPending, startTransition] = useTransition();
+    // const handleClick = ()=>startTransition(()=>{
+    //     onClick();
+    // })
+    return <button className={className} onClick={onClick}>
         {children}
     </button>;
 }
