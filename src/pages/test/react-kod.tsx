@@ -1,7 +1,7 @@
 import styles from "@/styles/test/react-kod-tabs.module.scss"
 import { useState } from "react";
 import { Tab, TabButtons, Tabs } from "react-kod";
-import HeavyTabs from "./HeavyTabs";
+import HeavyTabs from "./HeavyTab";
 const tabs = [{
     key: "0",
     title: "title1"
