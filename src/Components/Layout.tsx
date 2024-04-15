@@ -5,12 +5,12 @@ const Layout = ({ children }: { children?: ReactNode }) => {
     return <>
         <header className={styles.header}>
             <nav>
-                <Link href={"/test/tabs"}>
+                {/* <Link href={"/test/tabs"}>
                     Simple Tabs
                 </Link>
                 <Link href={"/test/react-kod"}>
                     React Kod Tabs
-                </Link>
+                </Link> */}
             </nav>
         </header>
         <main className={styles.main}>

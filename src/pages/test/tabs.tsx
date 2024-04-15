@@ -20,7 +20,7 @@ const Tabs = () => {
     }
     return <div className={styles.tabs}>
         <div className={styles.tabButtons}>
-            {tabs.map((x) => <button key={x.key} onClick={() => handleTabChange(x.key)}>
+            {tabs.map((x) => <button key={x.key} onClick={() => handleTabChange(x.key)} className={x.key===activeTab?styles.active:""}>
                 {x.title}
             </button>)}
         </div>
