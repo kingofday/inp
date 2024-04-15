@@ -1,0 +1,15 @@
+.header {
+    margin: 0 10%;
+    nav {
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        background: #eee;
+        a{
+            padding: 16px;
+        }
+    }
+}
+.main{
+    margin: 10%;
+}

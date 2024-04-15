@@ -1,0 +1,17 @@
+.tabs {
+    .tabButtons {
+        display: flex;
+
+        button {
+            padding: 10px;
+        }
+    }
+
+    .tabContent {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+}
